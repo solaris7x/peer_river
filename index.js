@@ -1,5 +1,5 @@
 const express = require("express");
-const torrentFileIndex = require("./torrentFIleIndex");
+const torrentFileIndex = require("./torrentFileIndex");
 const torrentStream = require("./torrentStream");
 
 const app = express();
@@ -20,7 +20,7 @@ app.get("/getfile", (req, res) => {
   // "magnet:?xt=urn:btih:3010B35somebleh1821E155473153433413FFBA6&dn=Dua+Lipa-We%26%23039%3Bre+Good.mp3&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fcoppersurfer.tk%3A6969%2Fannounce";
   //   res.send("Hello World!");
 
-  const fileIndex = req.query.fileIndex || 1;
+  const fileIndex = req.query.fileIndex || 0;
   torrentStream(magnetURI, fileIndex, res);
 });
 
