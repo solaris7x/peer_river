@@ -1,0 +1,22 @@
+{
+  "name": "peer_river",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mime-types": "^2.1.29",
+    "webtorrent": "^0.114.1",
+    "webtorrent-hybrid": "^4.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
