@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "mime-types": "^2.1.32",
+    "mime-types": "^2.1.34",
     "node-pre-gyp": "^0.17.0",
     "webtorrent": "^1.3.10",
     "webtorrent-hybrid": "^4.1.2"
